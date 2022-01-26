@@ -1,0 +1,38 @@
+TODO:
+  Simulation
+    1 Add more default champion data
+    2 Simulate bench
+    3 Simulate shop
+    4 Simulate other players & multiple matches
+    5 Simulate carrousel
+    6 Simulate one game
+    7 Train a bot
+
+
+  
+    2 Simulate synergies of ahri
+    4 Simulate some other abilities
+    5 Simulate some items
+    6 Find best positions
+    7 Simulate all items
+    8 Simulate all abilities
+    9 Simulate all synergies
+    
+  Hypersolving
+    - Find best position against this comp given this comp
+
+// TODO: update melee champions first < not tested yet
+// TODO: Introduce randomness in orders and make it possible to simulate multiple times to find multiple run stats
+// TODO: I think riot does it bad, and updates every champion once, but this might need more testing (update one tick board)
+// TODO: Should we move to the target champion, or to a spot that is in attackrange?  
+// TODO: Figure out mana generation from damage
+
+
+TFT trainer plans:
+  - Link to your own projects
+  - Use to make a tft bot
+  - Streaming?
+  
+TFT Bot plans:
+  - Great to get hired
+  - Streaming?

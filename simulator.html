@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>LOL-TFT: Battle Simulator</title>
+
+        <link href="simulator.css" rel="stylesheet">
+
+        
+        <script src="STATIC_DATA.js"></script>
+
+        <script src="gui/GUIBoard.js"></script>
+        <script src="gui/GUIInterface.js"></script>
+        <script src="gui/GUI.js"></script>
+
+        <script src="simulator/victor.js"></script>
+        <script src="simulator/Board.js"></script>
+        <script src="simulator/abilities/AhriUlt.js"></script>
+        <script src="simulator/Champions.js"></script>
+        <script src="simulator/Simulator.js"></script>
+    </head>
+    <body>
+        <h1>League of Legends: Teamfight Tactics</h1>
+        <h2>Battle simulator and practice tool</h2>
+
+        <div id="target"></div>
+
+        <button onclick="gui.simulateRealTime(); this.parentNode.removeChild(this)">Simulate</button>
+
+        <script>
+            var SIMULATOR = new Simulator();
+            var gui;
+
+            STATIC_DATA.load().then(() => {
+                gui = new GUI(SIMULATOR);
+                gui.createGUI(document.getElementById("target"));
+            }).catch((err) => {
+                alert(err);
+            });
+        </script>
+    </body>
+</html>
